@@ -1,8 +1,25 @@
 aid: surfboard
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/surfboard.png
 name: Surfboard
-description: Surfboard is a company surfaced as a portfolio company of seedcamp, speedinvest and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Surfboard (teamsurfboard.com) was a workforce management (WFM) SaaS for customer support
+  teams — scheduling, forecasting, and real-time staffing for contact centers — backed by
+  Seedcamp and Speedinvest. As of this enrichment pass the standalone product no longer operates
+  independently; teamsurfboard.com returns an HTTP 301 permanent redirect to Dialpad's workforce
+  management software page (dialpad.com/features/workforce-management-software), indicating Surfboard
+  was acquired by / folded into Dialpad. No standalone Surfboard developer portal, API reference,
+  or OpenAPI surface is publicly reachable; all probed /.well-known/ discovery endpoints return 404.
 url: https://raw.githubusercontent.com/api-evangelist/surfboard/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +28,20 @@ x-backed-by:
 - speedinvest
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: dialpad
+x-acquired-evidence: 'teamsurfboard.com HTTP 301 -> https://www.dialpad.com/features/workforce-management-software/'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Workforce Management
+- Customer Support
+- Contact Center
+- Scheduling
+- WFM
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/surfboard-domain-security.yml
 - type: Website
   url: http://teamsurfboard.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

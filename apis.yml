@@ -31,7 +31,7 @@ x-tier-reason: portfolio-lead
 x-status: acquired
 x-acquired-by: dialpad
 x-acquired-evidence: 'teamsurfboard.com HTTP 301 -> https://www.dialpad.com/features/workforce-management-software/'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:

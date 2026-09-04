@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'http://teamsurfboard.com', status: 301, note: 'declared website redirects to https://www.dialpad.com/features/workforce-management-software/ — a different registrable domain (teamsurfboard.com -> dialpad.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/surfboard.png
 name: Surfboard
 description: >-
